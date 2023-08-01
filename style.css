@@ -107,3 +107,26 @@ p {
       font-size: 24px;
     }
 }
+
+@media only screen and (max-device-width: 768px) {
+        /* Adjust font sizes */
+    h1 {
+      font-size: 36px;
+    }
+    .cards {
+      grid-template-columns: repeat(3, 140px);
+      grid-template-rows: repeat(4, 210px);
+      grid-gap: 10px;
+    }
+  
+    .card {
+      height: 210px;
+      width: 140px;
+    }
+  
+    /* Adjust padding and font size for the restart button */
+    .actions button {
+      padding: 10px 20px;
+      font-size: 24px;
+    }
+}
