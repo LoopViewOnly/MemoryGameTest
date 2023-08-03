@@ -3,7 +3,9 @@ body {
     min-width: 100vh;
     background-color: #12181f;
     color: white;
+    display: flex; /* Add display property for older Safari versions */
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -68,6 +70,7 @@ p {
     left: 0;
     height: 100%;
     width: 100%;
+    transform: rotateY(180deg); /* Fix for Safari */
 }
 
 .card .front {
@@ -85,7 +88,7 @@ p {
     backface-visibility: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
     /* Adjust font sizes */
     h1 {
         font-size: 36px;
