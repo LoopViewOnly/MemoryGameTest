@@ -48,8 +48,11 @@ p {
     background-color: white;
     position: relative;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
     perspective: 1000px; /* Adjust perspective for 3D rendering */
+    -webkit-perspective: 1000px;
 }
 
 .front-image {
@@ -60,10 +63,12 @@ p {
 
 .card.flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .front, .back {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     border-radius: 10px;
     top: 0;
@@ -71,6 +76,8 @@ p {
     height: 100%;
     width: 100%;
     transform: rotateY(180deg); /* Fix for Safari */
+    -webkit-transform: rotateY(180deg); /* Fix for Safari */
+
 }
 
 .card .front {
@@ -79,6 +86,7 @@ p {
     align-items: center;
     z-index: 1; /* Ensure front face is layered above the back face */
     transform: rotateY(180deg); /* Fix for Safari */
+    -webkit-transform: rotateY(180deg);
 }
 
 .card .back {
@@ -86,6 +94,7 @@ p {
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 @media (max-width: 700px) {
