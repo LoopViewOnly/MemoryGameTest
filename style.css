@@ -62,6 +62,8 @@ p {
 }
 
 .card.flipped {
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
 }
