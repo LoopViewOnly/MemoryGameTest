@@ -138,6 +138,8 @@ p {
     z-index: 1; /* Ensure front face is layered above the back face */
     transform: rotateY(180deg); /* Fix for Safari */
     -webkit-transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .card .back {
@@ -148,6 +150,8 @@ p {
     -webkit-backface-visibility: hidden;
     transform: rotateY(0deg); /* Fix for Safari */
     -webkit-transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 @media (max-width: 700px) {
