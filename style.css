@@ -95,6 +95,8 @@ p {
     background-size: cover;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    transform: rotateY(0deg); /* Fix for Safari */
+    -webkit-transform: rotateY(0deg);
 }
 
 @media (max-width: 700px) {
